@@ -1,10 +1,13 @@
 body
 {
-	background-color:rgb(0, 0, 64);
+	
 	font-family:Arial;
 	padding:0px;
 	margin:0px;
 	width:100%;
+    
+    
+
 }
 header
 {
@@ -201,10 +204,10 @@ header
 }
 #bar
 {
-    height : 140px;
+    
     width : 100%;
     display:block;
-    
+   
     overflow: auto;
     position: relative;
     margin-bottom: 0px;
@@ -400,7 +403,7 @@ header
     font-weight: 900;
     font-stretch: 100%;
     letter-spacing:-1px;
-    color: white;
+    color: rgb(0, 0, 64);
     box-sizing: border-box;
     padding-left: 40px;
   
@@ -411,16 +414,17 @@ header
     font-weight: 900;
     font-stretch: 100%;
     letter-spacing:-1px;
-    color: white;
+    color: black;
     box-sizing: border-box;
     padding-left: 40px;
+    padding-right: 20px;
 }
 .slide_out_container
 {
     margin-top: 20px;
     display: block;
     position: relative;
-    background-color: rgb(120,120,120);
+    background-color: rgb(0, 0, 64);
     box-sizing: border-box;
     padding-right:30px;
     padding-left: 50px;
@@ -432,10 +436,10 @@ header
     font-size: 35px;
     font-weight: 900;
     font-stretch: 100%;
-    letter-spacing:-1px;
+    letter-spacing:0px;
     word-break: break-all;
     text-decoration: none;
-    color: black;
+    color: white;
     
 }
 .slide_out_image
@@ -472,6 +476,7 @@ header
     padding: 40px;
     margin-left: auto;
     margin-right: auto;
+    color:black;
     
 }
 
@@ -531,6 +536,7 @@ header
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
+    background-color:white;
     
 }
 
@@ -547,7 +553,7 @@ header
     border-style: solid;
     border-width: 1px; 
     float:right;
-    background-color: white;
+    background-color: white
     
 }
 #email_message
@@ -646,7 +652,7 @@ header
         font-weight: 900;
         font-stretch: 100%;
         letter-spacing:-1px;
-        color: white;
+        color:rgb(0, 0, 64);
         box-sizing: border-box;
         padding-left: 40px;
     
@@ -659,9 +665,10 @@ header
         font-weight: 900;
         font-stretch: 100%;
         letter-spacing:-1px;
-        color: white;
+        color: black;
         box-sizing: border-box;
         padding-left: 40px;
+        padding-right: 40px;
     }
     .slide_out_container
     {   
@@ -674,15 +681,18 @@ header
         border-radius: 15px;
         padding: 40px 5px;
         
+        
 
     }
     #phone_number_container
     {
         font-size: 65px;
+        letter-spacing: 0px;
     } 
     #email_container
     {
-        font-size:50px;
+        font-size:4vw;
+        letter-spacing: 0px;
     } 
 
 

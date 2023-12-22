@@ -5,11 +5,102 @@
 </head>
 <body>
     <header>
-     
+        
+        <a id = "logo" href = "index.html"> <img id = "logoImage" src="images\Logo.png" alt="Logo"></a>
+        <ul id = "nav_container">
+            <li id = "list_one" class = "nav_list"><a class = "nav_link" href = "index.html" >Home</a></li>
+            <li id = "list_two" class = "nav_list"> <a class = "nav_link" href= "about.html">About</a></li>
+            <li id = "list_three" class = "nav_list"> <a class = "nav_link"  href= "services.html">Services</a></li>
+            <li id = "list_four" class = "nav_list"><a class = "nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
+        </ul>
+        <img id = "menuImage" src="images\menu_image.png"  onclick = "show_menu()" alt="Menu Button, press this button to open the navigation menu">
+        <div id = "menu_show_container">
+                <ul id = "menu_nav_container">    
+                    <li id = "menu_list_one" class = "menu_nav_list"><a class = "menu_nav_link" href = "index.html" >Home</a></li>
+                    <li id = "menu_list_two" class = "menu_nav_list"> <a class = "menu_nav_link" href= "about.html">About</a></li>
+                    <li id = "menu_list_three" class = "menu_nav_list"> <a class = "menu_nav_link"  href= "services.html">Services</a></li>
+                    <li id = "menu_list_four" class = "menu_nav_list"><a class = "menu_nav_link" id = "onPage" href= "contactUs.html">Contact</a></li>
+            </ul>
+        </div>
+        <img id = "close_image" src="images\close_image.png"  onclick = "close_menu()"alt = "This a button that closes the navigation menu">
     </header>
     <div id = "bar">
     </div>
-    <div id = "con_title">Under Construction ...<div>
+    <div id = "big_image_container">
+        <div id = "desktop_title_logo_services">
+            <div id = "left_side_container">
+                <div id = "title_one_im">Art<br>Concrete<br>Construction</div>
+            </div>
+            <div id = "right_side_container">
+                <img id = "top_image_one" src="images\home\logo_transparent.png"  alt = "">
+            </div>
+            <div id = "services_list_container">
+                <ul id = "services_list_top">
+                    <li class = "services_list_item_top" id = "services_item_one">Driveways</li>
+                    <li class = "services_list_item_top" >Sidewalks</li>
+                    <li class = "services_list_item_top" >Slabs</li>
+                    <li class = "services_list_item_top" >Steps</li>
+                    <li class = "services_list_item_top" >Walls</li>
+                    <li class = "services_list_item_top" id = "services_item_six">Repairs</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div id = "mobile_desktop_title_logo_services">
+            <div id = "mobile_title_one_im">Art<br>Concrete<br>Construction</div>
+            <img id = "mobile_top_image_one" src="images\home\logo_transparent.png"  alt = "">
+            <ul id = "mobile_services_list_top">
+                <li class = "mobile_services_list_item_top" id = "mobile_services_item_one">Driveways</li>
+                <li class = "mobile_services_list_item_top" >Sidewalks</li>
+                <li class = "mobile_services_list_item_top" >Slabs</li>
+                <li class = "mobile_services_list_item_top" >Steps</li>
+                <li class = "mobile_services_list_item_top" >Walls</li>
+                <li class = "mobile_services_list_item_top" id = "mobile_services_item_six">Repairs</li>
+            </ul>
+        </div>
+        <div id = "wwd_container">
+            <div id = "left_side_second_level">
+                <div id = "slide_out_title_container">
+                    What We Do
+                </div>
+                <p id = "wwd_para">
+                    We do all types of residential and commercial concrete construction.
+                    No Job too small or too large!
+                    <br><br>
+                    If you would like to see more of our work, check out our services page
+                    by clicking the button below!
+                </p>
+                <div id = "button_container">
+                    <a href = "services.html" id = "services_button_on_third_level">Our Work!</a>
+                </div>
+            </div>
+            <div id = "right_side_second_level">
+                <img id = "image_one_on_third_block_third_level" src="images\home\image_one.jpg"  alt = "">
+                <img id = "image_two_on_third_block_third_level" src="images\home\image_two.jpg"  alt = "">
+            </div>
+            
+
+        </div>
+    </div>
+    <div id = "second_level_container">
+        <img id = "second_level_image_one" src="images\home\3d_image_fixed.png"  alt = "">
+        <div id = "second_level_small_right_side">
+            <img id = "experience_image_on_second_level" src="images\home\experience_sign_best_up.png"  alt = "">
+            <img id = "family_image_on_second_level" src="images\home\family_con.png"  alt = "">
+        </div>
+    </div>
+    <div id = "mobile_location_with_stamps_container">
+        <img id = "mobile_second_level_image_one" src="images\home\3d_image_fixed.png"  alt = "">
+        <div id = "mobile_second_level_small_right_side">
+            <img id = "mobile_experience_image_on_second_level" src="images\home\experience_sign_best_up.png"  alt = "">
+            <img id = "mobile_family_image_on_second_level" src="images\home\family_con.png"  alt = "">
+        </div>
+    </div>
+    
+    <div id = "endPageBar">
+    </div>
+        
+        
 </body>
 <script type="text/javascript" src="JS-Script/homeScript.js"></script>
 </html>

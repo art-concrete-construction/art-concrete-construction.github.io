@@ -114,10 +114,11 @@ function submit_email()
                                 }
                                 else
                                 {
+                                  
                                     //Gets info inputted and formats it to be prfilled in email when
                                     // it redirects user to email logged into on device they are using
                                     subject = "Website Message - " + first_name + " " + last_name + " - " + email;
-                                    mailto_string = "1234567899@gmail.com ?subject=" + subject + "&body=" + message;
+                                    mailto_string = "mailto:Rodriang29@gmail.com ?subject=" + subject + "&body=" + message;
                                     window.open(mailto_string);
                                 }
                             }
@@ -209,7 +210,7 @@ function checkScreen()
                             //resize image
                             document.getElementById("logoImage").style.height = "80px";
                             //bar height
-                            document.getElementById("bar").style.height = "170px";
+                            document.getElementById("bar").style.height = "130px";
 
 
                             //Ajusting left side of container 

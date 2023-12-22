@@ -20,7 +20,7 @@ var screen_height = screen.height;
 // This variable is the set limit used to know when the browser width is to
 // small for desktop view so the minimum width for desktop view in a sense 
 // since anthting above set_limit is desktop view
-var set_limit = 1100;
+var set_limit = 1020;
 
 //View: mobile, browser to small
 //Summary: This function opens dropdown menu of tabs in header
@@ -100,11 +100,22 @@ function checkScreen()
                             //bar height
                             document.getElementById("bar").style.height = "75px";
 
+                            //document.getElementById("big_image_container").style.display = "none";
+                            //document.getElementById("mobile_big_image_container").style.display = "block";
+                            //document.getElementById("left_side_container").style.width = "100%";
+                            //document.getElementById("right_side_container").style.width = "100%";
+                            //document.getElementById("title_one_im").style.fontSize = "50px";
+                            
+                            document.getElementById("big_image_container").style.backgroundImage = "url(images/home/concrete_block_white_long_four.jpg)";
+                            document.getElementById("desktop_title_logo_services").style.display = "none";
+                            document.getElementById("mobile_desktop_title_logo_services").style.display = "block";
+                            document.getElementById("wwd_container").style.marginTop = "0px";
 
-                            document.getElementById("left_side_container").style.width = "100%";
-                            document.getElementById("right_side_container").style.width = "100%";
-                            document.getElementById("third_level_container").style.display = "none";
-                            document.getElementById("small_browser_what_we_do_container").style.display = "inline-block";
+                            document.getElementById("slide_out_title_container").style.width = "90%";
+                            document.getElementById("left_side_second_level").style.width = "100%";
+                            document.getElementById("right_side_second_level").style.width = "100%";
+                            //document.getElementById("third_level_container").style.display = "none";
+                            //document.getElementById("small_browser_what_we_do_container").style.display = "inline-block";
                             document.getElementById("second_level_container").style.display = "none";
                             document.getElementById("mobile_location_with_stamps_container").style.display = "block";
                           
@@ -132,10 +143,21 @@ function checkScreen()
                             //bar height
                             document.getElementById("bar").style.height = "70px";
 
-                            document.getElementById("left_side_container").style.width = "60%";
-                            document.getElementById("right_side_container").style.width = "40%";
-                            document.getElementById("third_level_container").style.display = "inline-block";
-                            document.getElementById("small_browser_what_we_do_container").style.display = "none";
+                            //document.getElementById("big_image_container").style.display = "block";
+                            //document.getElementById("mobile_big_image_container").style.display = "none";
+                            //document.getElementById("left_side_container").style.width = "40%";
+                            //document.getElementById("right_side_container").style.width = "40%";
+                            //document.getElementById("title_one_im").style.fontSize = "80px";
+                            document.getElementById("big_image_container").style.backgroundImage = "url(images/home/concrete_block_white.jpg)";
+                            document.getElementById("desktop_title_logo_services").style.display = "block";
+                            document.getElementById("mobile_desktop_title_logo_services").style.display = "none";
+                            document.getElementById("wwd_container").style.marginTop = "120px";
+
+                            document.getElementById("slide_out_title_container").style.width = "50%";
+                            document.getElementById("left_side_second_level").style.width = "70%";
+                            document.getElementById("right_side_second_level").style.width = "30%";
+                            //document.getElementById("third_level_container").style.display = "inline-block";
+                            //document.getElementById("small_browser_what_we_do_container").style.display = "none";
                             document.getElementById("second_level_container").style.display = "block";
                             document.getElementById("mobile_location_with_stamps_container").style.display = "none";
                             

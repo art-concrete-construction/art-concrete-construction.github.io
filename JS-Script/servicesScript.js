@@ -74,21 +74,27 @@ function reset_buttons()
     'use strict';
     document.getElementById("button_one").style.width = "40%";
     document.getElementById("button_one").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("button_one").style.color = "black";
    
     document.getElementById("button_two").style.width = "40%";
-    document.getElementById("button_two").style.backgroundColor = "rgb(120,120,120)";  
+    document.getElementById("button_two").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("button_two").style.color = "black";  
     
     document.getElementById("button_three").style.width = "40%";
     document.getElementById("button_three").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("button_three").style.color = "black";
 
     document.getElementById("button_four").style.width = "40%";
     document.getElementById("button_four").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("button_four").style.color = "black";
 
     document.getElementById("button_five").style.width = "40%";
     document.getElementById("button_five").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("button_five").style.color = "black";
 
     document.getElementById("button_six").style.width = "40%";
     document.getElementById("button_six").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("button_six").style.color = "black";
 }
 function reset_images()
 {
@@ -135,10 +141,11 @@ function button_one_stretch()
     else
     {
         reset_all();
-        document.getElementById("button_one").style.width = "50%";
+        document.getElementById("button_one").style.width = "47%";
         document.getElementById("button_one_image").style.display = "block";
     }
-    document.getElementById("button_one").style.backgroundColor = "white";
+    document.getElementById("button_one").style.backgroundColor = "rgb(0,0,64)";    
+    document.getElementById("button_one").style.color = "white"; 
    
                           
 }
@@ -157,10 +164,11 @@ function button_two_stretch()
     else
     {
         reset_all();
-        document.getElementById("button_two").style.width = "53%";
+        document.getElementById("button_two").style.width = "75%";
         document.getElementById("button_two_image").style.display = "block";  
     }
-    document.getElementById("button_two").style.backgroundColor = "white";
+    document.getElementById("button_two").style.backgroundColor = "rgb(0,0,64)";    
+    document.getElementById("button_two").style.color = "white"; 
                         
 }
 function button_three_stretch()
@@ -181,7 +189,8 @@ function button_three_stretch()
         document.getElementById("button_three").style.width = "63%";
         document.getElementById("button_three_image").style.display = "block";  
     }
-    document.getElementById("button_three").style.backgroundColor = "white";                   
+    document.getElementById("button_three").style.backgroundColor = "rgb(0,0,64)";    
+    document.getElementById("button_three").style.color = "white";                 
 }
 function button_four_stretch()
 {
@@ -198,10 +207,11 @@ function button_four_stretch()
     else
     {
         reset_all();
-        document.getElementById("button_four").style.width = "56%";
+        document.getElementById("button_four").style.width = "79%";
         document.getElementById("button_four_image").style.display = "block";
     }
-    document.getElementById("button_four").style.backgroundColor = "white";                   
+    document.getElementById("button_four").style.backgroundColor = "rgb(0,0,64)";    
+    document.getElementById("button_four").style.color = "white";                   
 }
 function button_five_stretch()
 {
@@ -218,10 +228,11 @@ function button_five_stretch()
     else
     {
         reset_all();
-        document.getElementById("button_five").style.width = "52%";
+        document.getElementById("button_five").style.width = "97%";
         document.getElementById("button_five_image").style.display = "block";
     }
-    document.getElementById("button_five").style.backgroundColor = "white";                      
+    document.getElementById("button_five").style.backgroundColor = "rgb(0,0,64)";    
+    document.getElementById("button_five").style.color = "white";                       
 }
 function button_six_stretch()
 {
@@ -238,10 +249,11 @@ function button_six_stretch()
     else
     {
         reset_all();
-        document.getElementById("button_six").style.width = "67%";
+        document.getElementById("button_six").style.width = "97%";
         document.getElementById("button_six_image").style.display = "block";
     }
-    document.getElementById("button_six").style.backgroundColor = "white";                     
+    document.getElementById("button_six").style.backgroundColor = "rgb(0,0,64)";    
+    document.getElementById("button_six").style.color = "white";                      
 }
 //******************* Mobile functions ************************** */
 // *****************************************************************
@@ -253,11 +265,22 @@ function mobile_reset_buttons()
 {
     'use strict';
     document.getElementById("mobile_button_one").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("mobile_button_one").style.color = "black";
+    
     document.getElementById("mobile_button_two").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("mobile_button_two").style.color = "black";
+
     document.getElementById("mobile_button_three").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("mobile_button_three").style.color = "black";
+
     document.getElementById("mobile_button_four").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("mobile_button_four").style.color = "black";
+
     document.getElementById("mobile_button_five").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("mobile_button_five").style.color = "black";
+
     document.getElementById("mobile_button_six").style.backgroundColor = "rgb(120,120,120)";
+    document.getElementById("mobile_button_six").style.color = "black";
                          
 }
 
@@ -272,6 +295,15 @@ function mobile_reset_all()
     mobile_reset_images();
 
 }
+//  View: Mobile
+//  Summary: This function scrolls into view last button but since header it scrolls into
+// view the top of the first pic
+function scroll_to_pics()
+{
+    'use strict';
+    document.getElementById("mobile_button_six").scrollIntoView();
+
+}
 //  View: Mobile 
 //  Button:Driveways
 //  Summary: This function is called when the first button is pressed which is "Steps"
@@ -284,8 +316,10 @@ function mobile_button_one()
 {
     'use strict';
     mobile_reset_all()
-    document.getElementById("mobile_button_one").style.backgroundColor = "white";
+    document.getElementById("mobile_button_one").style.backgroundColor = "rgb(0,0,64";
+    document.getElementById("mobile_button_one").style.color = "white";
     document.getElementById("mobile_button_one_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 //  View: Mobile 
@@ -300,8 +334,10 @@ function mobile_button_two()
 {
     'use strict';
     mobile_reset_all()
-    document.getElementById("mobile_button_two").style.backgroundColor = "white";
+    document.getElementById("mobile_button_two").style.backgroundColor = "rgb(0,0,64";
+    document.getElementById("mobile_button_two").style.color = "white";
     document.getElementById("mobile_button_two_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 //  View: Mobile 
@@ -316,8 +352,10 @@ function mobile_button_three()
 {
     'use strict';
     mobile_reset_all()
-    document.getElementById("mobile_button_three").style.backgroundColor = "white";
+    document.getElementById("mobile_button_three").style.backgroundColor = "rgb(0,0,64";
+    document.getElementById("mobile_button_three").style.color = "white";
     document.getElementById("mobile_button_three_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 //  View: Mobile 
@@ -332,8 +370,10 @@ function mobile_button_four()
 {
     'use strict';
     mobile_reset_all()
-    document.getElementById("mobile_button_four").style.backgroundColor = "white";
+    document.getElementById("mobile_button_four").style.backgroundColor = "rgb(0,0,64";
+    document.getElementById("mobile_button_four").style.color = "white";
     document.getElementById("mobile_button_four_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 //  View: Mobile
@@ -348,8 +388,10 @@ function mobile_button_five()
 {
     'use strict';
     mobile_reset_all()
-    document.getElementById("mobile_button_five").style.backgroundColor = "white";
+    document.getElementById("mobile_button_five").style.backgroundColor = "rgb(0,0,64";
+    document.getElementById("mobile_button_five").style.color = "white";
     document.getElementById("mobile_button_five_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 //  View: Mobile 
@@ -364,8 +406,10 @@ function mobile_button_six()
 {
     'use strict';
     mobile_reset_all()
-    document.getElementById("mobile_button_six").style.backgroundColor = "white";
+    document.getElementById("mobile_button_six").style.backgroundColor = "rgb(0,0,64";
+    document.getElementById("mobile_button_six").style.color = "white";
     document.getElementById("mobile_button_six_images_container").style.display = "block";
+    scroll_to_pics();
 
 }
 // View: Mobile
@@ -464,7 +508,7 @@ function checkScreen()
                             document.getElementById("list_two").style.display = "inline";
                             document.getElementById("list_three").style.display = "inline";
                             document.getElementById("list_four").style.display = "inline";
-                            
+                         
                             //resize nav container
                             document.getElementById("nav_container").style.paddingTop = "70px";
                             //resize image
