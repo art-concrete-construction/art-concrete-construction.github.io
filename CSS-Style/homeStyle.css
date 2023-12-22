@@ -47,6 +47,15 @@ header
 	padding-top:50px;
 	padding-bottom: 15px;   
 }
+#con_title
+{
+	width:100%;
+	text-align:center;
+	font-size:50px;
+	font-weight:900;
+	padding-top:50px;
+	
+}
 #logoImage
 {
 	height: 80px;
