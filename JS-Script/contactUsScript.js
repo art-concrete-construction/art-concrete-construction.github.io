@@ -120,6 +120,7 @@ function submit_email()
                                     subject = "Website Message - " + first_name + " " + last_name + " - " + email;
                                     mailto_string = "mailto:Rodriang29@gmail.com ?subject=" + subject + "&body=" + message;
                                     //window.open(mailto_string);
+                                    //Simulates a mouse click on the link
                                     window.location.href = mailto_string;
                                 }
                             }
