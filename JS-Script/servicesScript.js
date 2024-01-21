@@ -21,9 +21,23 @@ var screen_height = screen.height;
 // since anthting above set_limit is desktop view
 var set_limit = 1000;
 
+
+//View:Browser to small
+// Is the width for all the buttons when not selected 
+var b_two_small_button_reset_width = "38%";
 //View:Browser to small
 // Is the width for all the buttons to expand so the can be the same 
-var button_width = "50%";
+var b_two_small_button_expand_width = "40%";
+
+
+
+//view: desktop
+//width that the buttons will be at when not selected
+var desktop_button_reset_width = "30%";
+
+//view: desktop
+// This variable is the expand width for a button when selected
+var desktop_button_expand_width = "35%"
 
 //View: Desktop, Browser to small
 //This variable is to know what button is selected
@@ -72,29 +86,50 @@ function is_browser_to_small()
 function reset_buttons()
 {
     'use strict';
-    document.getElementById("button_one").style.width = "40%";
+    
     document.getElementById("button_one").style.backgroundColor = "rgb(120,120,120)";
     document.getElementById("button_one").style.color = "black";
    
-    document.getElementById("button_two").style.width = "40%";
+    
     document.getElementById("button_two").style.backgroundColor = "rgb(120,120,120)";
     document.getElementById("button_two").style.color = "black";  
     
-    document.getElementById("button_three").style.width = "40%";
+    
     document.getElementById("button_three").style.backgroundColor = "rgb(120,120,120)";
     document.getElementById("button_three").style.color = "black";
 
-    document.getElementById("button_four").style.width = "40%";
+    
     document.getElementById("button_four").style.backgroundColor = "rgb(120,120,120)";
     document.getElementById("button_four").style.color = "black";
 
-    document.getElementById("button_five").style.width = "40%";
+    
     document.getElementById("button_five").style.backgroundColor = "rgb(120,120,120)";
     document.getElementById("button_five").style.color = "black";
 
-    document.getElementById("button_six").style.width = "40%";
+    
     document.getElementById("button_six").style.backgroundColor = "rgb(120,120,120)";
     document.getElementById("button_six").style.color = "black";
+
+    if(is_browser_to_small())
+    {
+        document.getElementById("button_one").style.width = b_two_small_button_reset_width;
+        document.getElementById("button_two").style.width = b_two_small_button_reset_width;
+        document.getElementById("button_three").style.width = b_two_small_button_reset_width;
+        document.getElementById("button_four").style.width = b_two_small_button_reset_width;
+        document.getElementById("button_five").style.width = b_two_small_button_reset_width;
+        document.getElementById("button_six").style.width = b_two_small_button_reset_width;
+
+    }
+    else
+    {
+        document.getElementById("button_one").style.width = desktop_button_reset_width;
+        document.getElementById("button_two").style.width = desktop_button_reset_width;
+        document.getElementById("button_three").style.width = desktop_button_reset_width;
+        document.getElementById("button_four").style.width = desktop_button_reset_width;
+        document.getElementById("button_five").style.width = desktop_button_reset_width;
+        document.getElementById("button_six").style.width = desktop_button_reset_width;
+    }
+    
 }
 function reset_images()
 {
@@ -130,18 +165,19 @@ function button_one_stretch()
 {
     'use strict';
     button_selected = 1;
+    scroll_to_top();
     if(is_browser_to_small())
     {
         reset_buttons();
         mobile_reset_images();
-        document.getElementById("button_one").style.width = button_width;
+        document.getElementById("button_one").style.width = b_two_small_button_expand_width;
         document.getElementById("mobile_button_one_images_container").style.display = "block";
 
     }
     else
     {
         reset_all();
-        document.getElementById("button_one").style.width = "47%";
+        document.getElementById("button_one").style.width =  desktop_button_expand_width;
         document.getElementById("button_one_image").style.display = "block";
     }
     document.getElementById("button_one").style.backgroundColor = "rgb(0,0,64)";    
@@ -153,18 +189,19 @@ function button_two_stretch()
 {
     'use strict';
     button_selected = 2;
+    scroll_to_top();
     if(is_browser_to_small())
     {
         reset_buttons();
         mobile_reset_images();
-        document.getElementById("button_two").style.width = button_width;
+        document.getElementById("button_two").style.width = b_two_small_button_expand_width;
         document.getElementById("mobile_button_two_images_container").style.display = "block";
 
     }
     else
     {
         reset_all();
-        document.getElementById("button_two").style.width = "75%";
+        document.getElementById("button_two").style.width = desktop_button_expand_width;
         document.getElementById("button_two_image").style.display = "block";  
     }
     document.getElementById("button_two").style.backgroundColor = "rgb(0,0,64)";    
@@ -175,18 +212,19 @@ function button_three_stretch()
 {
     'use strict';
     button_selected = 3;
+    scroll_to_top();
     if(is_browser_to_small())
     {
         reset_buttons();
         mobile_reset_images();
-        document.getElementById("button_three").style.width = button_width;
+        document.getElementById("button_three").style.width = b_two_small_button_expand_width;
         document.getElementById("mobile_button_three_images_container").style.display = "block";
 
     }
     else
     {
         reset_all();
-        document.getElementById("button_three").style.width = "63%";
+        document.getElementById("button_three").style.width = desktop_button_expand_width;
         document.getElementById("button_three_image").style.display = "block";  
     }
     document.getElementById("button_three").style.backgroundColor = "rgb(0,0,64)";    
@@ -196,18 +234,19 @@ function button_four_stretch()
 {
     'use strict';
     button_selected = 4;
+    scroll_to_top();
     if(is_browser_to_small())
     {
         reset_buttons();
         mobile_reset_images();
-        document.getElementById("button_four").style.width = button_width;
+        document.getElementById("button_four").style.width = b_two_small_button_expand_width;
         document.getElementById("mobile_button_four_images_container").style.display = "block";
 
     }
     else
     {
         reset_all();
-        document.getElementById("button_four").style.width = "79%";
+        document.getElementById("button_four").style.width = desktop_button_expand_width;
         document.getElementById("button_four_image").style.display = "block";
     }
     document.getElementById("button_four").style.backgroundColor = "rgb(0,0,64)";    
@@ -217,18 +256,19 @@ function button_five_stretch()
 {
     'use strict';
     button_selected = 5;
+    scroll_to_top();
     if(is_browser_to_small())
     {
         reset_buttons();
         mobile_reset_images();
-        document.getElementById("button_five").style.width = button_width;
+        document.getElementById("button_five").style.width = b_two_small_button_expand_width;
         document.getElementById("mobile_button_five_images_container").style.display = "block";
 
     }
     else
     {
         reset_all();
-        document.getElementById("button_five").style.width = "97%";
+        document.getElementById("button_five").style.width = desktop_button_expand_width;
         document.getElementById("button_five_image").style.display = "block";
     }
     document.getElementById("button_five").style.backgroundColor = "rgb(0,0,64)";    
@@ -238,18 +278,19 @@ function button_six_stretch()
 {
     'use strict';
     button_selected = 6;
+    scroll_to_top();
     if(is_browser_to_small())
     {
         reset_buttons();
         mobile_reset_images();
-        document.getElementById("button_six").style.width = button_width;
+        document.getElementById("button_six").style.width = b_two_small_button_expand_width;
         document.getElementById("mobile_button_six_images_container").style.display = "block";
 
     }
     else
     {
         reset_all();
-        document.getElementById("button_six").style.width = "97%";
+        document.getElementById("button_six").style.width = desktop_button_expand_width;
         document.getElementById("button_six_image").style.display = "block";
     }
     document.getElementById("button_six").style.backgroundColor = "rgb(0,0,64)";    
@@ -295,6 +336,17 @@ function mobile_reset_all()
     mobile_reset_images();
 
 }
+
+//  View: Browser to small, Desktop
+//  Summary: This function scrolls into view last button but since header it scrolls into
+// view the top of the first pic
+function scroll_to_top()
+{
+    'use strict';
+    document.getElementById("bar").scrollIntoView();
+
+}
+
 //  View: Mobile
 //  Summary: This function scrolls into view last button but since header it scrolls into
 // view the top of the first pic
@@ -423,7 +475,7 @@ function mobile_to_top_button()
 
 }
 //View: Desktop, Browser to small
-// Summary: This function sets the corrrect image and button width
+// Summary: This function sets the correct image and button width
 // by checking what button was last pressed.
 // Description: It does this by check the variable button_selected to see what value
 // it has then depending on that value it calls the function connected 
@@ -460,6 +512,7 @@ function set_correct_image()
 function checkScreen()
 {
     'use strict';
+    set_correct_image();
                         //  View: Browser to small
                         //  Summary: Basically for when user adjust browser to too small view   
                         //  Description: Here we changed the code to only allow 
@@ -552,5 +605,5 @@ window.addEventListener('resize',
                         //when screen resizes calls this function to adjust website 
                         //to work with website dimensions
                         checkScreen();
-                        set_correct_image();
+                        //set_correct_image();
                     });

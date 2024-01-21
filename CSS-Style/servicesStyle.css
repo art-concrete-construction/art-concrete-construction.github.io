@@ -242,15 +242,21 @@ header
     margin:0;
     clip: rect(1px,1px,1px,1px);
 }
-#desktop_container_buttons
+#desktop_container_images
 {
+    width:65%;
+    position: relative;
+    display: none;
+    margin-top: 0px;
+    float:left;
+    padding-bottom: 30vh;
+    padding-top: 0px;
     
 }
 .button_type_one
 {
     box-sizing: border-box;
     padding: 8px;
-    
     background-color: rgb(120,120,120);
     border-width: 0px;
     border-top-left-radius: 10px;
@@ -261,10 +267,9 @@ header
     font-stretch: 100%;
     letter-spacing:-1px;
     padding-left: 35px;
-    width:40%;
+    width:30%;
     z-index: 5;
-    position: absolute;
-    
+    position: fixed;
     right:0;
    
 }
@@ -273,7 +278,7 @@ header
     top:130px;
     background-color: rgb(0,0,64);
     color:white;
-    width:47%;
+    width: 35%;
 }
 #button_two
 {
@@ -303,20 +308,30 @@ header
 .image_button
 {
     display: none;
-    width:50%;
-    position: absolute;
-    top:130px;
-    left:2%;
-    z-index: -1;
+    width:95%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.desktop_view_image_stack
+{
+    width:100%;
+    display: block;
+    margin-top: 10px;
+}
+#wall_image_too_big
+{
+    width:40%;
+}
+#repairs_too_small
+{
+    width:60%;
 }
 #mobile_container
 {
     display: none;
 }
-#mobile_all_images_container
-{
-    display: none;
-}
+
 
 #da_footer
 {
