@@ -475,11 +475,14 @@ function mobile_to_top_button()
 
 }
 //View: Desktop, Browser to small
-// Summary: This function sets the correct image and button width
+//Summary: This function sets the correct image and button width
 // by checking what button was last pressed.
 // Description: It does this by check the variable button_selected to see what value
 // it has then depending on that value it calls the function connected 
 // with that button that within that fucntion does what need to be done  
+//Note:
+//  this is so it sets the correct iamges for the button that 
+//  was last pressed when browser resized, also scolls back to top                         
 function set_correct_image()
 {
     'use strict';
@@ -512,7 +515,7 @@ function set_correct_image()
 function checkScreen()
 {
     'use strict';
-    set_correct_image();
+                        //set_correct_image();
                         //  View: Browser to small
                         //  Summary: Basically for when user adjust browser to too small view   
                         //  Description: Here we changed the code to only allow 
@@ -521,6 +524,9 @@ function checkScreen()
                         //  and the screen size is above the set limit variable
                         if(is_browser_to_small())
                         {
+                           //this is so it sets the correct iamges for the button that 
+                           //was last pressed when browser resized, also scolls back to top
+                            set_correct_image();
                             //Remove desktop tabs
                             //side note: in css i just did this with the class for 
                             // mobile view
@@ -552,6 +558,9 @@ function checkScreen()
                         //  that both the browser and screen width are greater then set_limit
                         if((screen_width > set_limit) && (browser_width > set_limit))
                         {
+                            //this is so it sets the correct iamges for the button that 
+                           //was last pressed when browser resized, also scolls back to top
+                            set_correct_image();
                             //Closes menu if menu is open when adjusting browser
                             close_menu();
                             //Removes menu button 
