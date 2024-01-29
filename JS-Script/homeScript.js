@@ -106,18 +106,18 @@ function checkScreen()
                             //document.getElementById("right_side_container").style.width = "100%";
                             //document.getElementById("title_one_im").style.fontSize = "50px";
                             
-                            document.getElementById("big_image_container").style.backgroundImage = "url(images/home/concrete_block_white_long_four.jpg)";
+                            //document.getElementById("desktop_title_logo_services").style.backgroundImage = "url(images/home/concrete_block_white_long_four.jpg)";
                             document.getElementById("desktop_title_logo_services").style.display = "none";
                             document.getElementById("mobile_desktop_title_logo_services").style.display = "block";
-                            document.getElementById("wwd_container").style.marginTop = "0px";
+                            //document.getElementById("wwd_container").style.marginTop = "0px";
 
-                            document.getElementById("slide_out_title_container").style.width = "90%";
+                            //document.getElementById("slide_out_title_container").style.width = "100%";
                             document.getElementById("left_side_second_level").style.width = "100%";
                             document.getElementById("right_side_second_level").style.width = "100%";
                             //document.getElementById("third_level_container").style.display = "none";
                             //document.getElementById("small_browser_what_we_do_container").style.display = "inline-block";
-                            document.getElementById("second_level_container").style.display = "none";
-                            document.getElementById("mobile_location_with_stamps_container").style.display = "block";
+                            //document.getElementById("second_level_container").style.display = "none";
+                            //document.getElementById("mobile_location_with_stamps_container").style.display = "block";
                           
                             
                         }
@@ -148,18 +148,18 @@ function checkScreen()
                             //document.getElementById("left_side_container").style.width = "40%";
                             //document.getElementById("right_side_container").style.width = "40%";
                             //document.getElementById("title_one_im").style.fontSize = "80px";
-                            document.getElementById("big_image_container").style.backgroundImage = "url(images/home/concrete_block_white.jpg)";
+                           // document.getElementById("desktop_title_logo_services").style.backgroundImage = "url(images/home/concrete_block_white.jpg)";
                             document.getElementById("desktop_title_logo_services").style.display = "block";
                             document.getElementById("mobile_desktop_title_logo_services").style.display = "none";
-                            document.getElementById("wwd_container").style.marginTop = "120px";
+                            document.getElementById("wwd_container").style.marginTop = "0px";
 
-                            document.getElementById("slide_out_title_container").style.width = "50%";
-                            document.getElementById("left_side_second_level").style.width = "70%";
-                            document.getElementById("right_side_second_level").style.width = "30%";
+                            //document.getElementById("slide_out_title_container").style.width = "100%";
+                            document.getElementById("left_side_second_level").style.width = "35%";
+                            document.getElementById("right_side_second_level").style.width = "65%";
                             //document.getElementById("third_level_container").style.display = "inline-block";
                             //document.getElementById("small_browser_what_we_do_container").style.display = "none";
-                            document.getElementById("second_level_container").style.display = "block";
-                            document.getElementById("mobile_location_with_stamps_container").style.display = "none";
+                            //document.getElementById("second_level_container").style.display = "block";
+                            //document.getElementById("mobile_location_with_stamps_container").style.display = "none";
                             
                            
                         }
