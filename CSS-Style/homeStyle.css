@@ -1221,7 +1221,7 @@ header
     padding-top: 20px;
     padding-bottom: 20px;
    
-    border-bottom-width: 10px;
+    border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(0,0,64);
    
@@ -1430,6 +1430,7 @@ header
         margin-top: 0px;
         margin-bottom: 0px;
         font-weight: 700;
+        display: block;
     }
     #wwd_para
     {
