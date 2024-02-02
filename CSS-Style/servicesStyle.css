@@ -409,7 +409,7 @@ header
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 15px;
+        border-radius: 0px;
         margin-bottom: 55px;
 }
 #mobile_all_images_container
