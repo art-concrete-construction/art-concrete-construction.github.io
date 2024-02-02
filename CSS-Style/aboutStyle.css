@@ -342,6 +342,9 @@ header
     border-bottom-right-radius: 15px;
     color: white;
     margin-bottom: 40px;
+    box-sizing: border-box;
+    
+
 
 }
 .slide_out_title_one
@@ -352,6 +355,7 @@ header
     font-size: 40px;
     display: inline-block;
     vertical-align: middle;
+    
 }
 
 .slide_out_image
@@ -419,22 +423,25 @@ header
 }
 #stamps_container
 {
-    width:44%;
+    width:50%;
     position:relative;
     text-align: justify;
     text-align-last: justify;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     padding-left:4%;
+  
+    box-sizing: border-box;
+    
 }
 .stamps_image
 {
     display: inline-block;
-    width:100%;
+    width:40%;
     vertical-align: middle;
-    margin-bottom: 30px;
 }
 #second_level_container
 {
@@ -631,7 +638,7 @@ header
     background-color: rgb(120,120,120);
     margin-left: auto;
     margin-right: auto;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 150px;
 }
 @media only screen and (max-device-width:900px)
@@ -698,6 +705,12 @@ header
         font-size: 65px;
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    #mobile_quality_n_customer_inner_container
+    {
+      
+        padding-top: 60px;
+      
     }
     .mobile_quality_n_customer_image
     {

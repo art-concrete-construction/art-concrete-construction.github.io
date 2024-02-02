@@ -22,6 +22,11 @@ var screen_height = screen.height;
 // since anthting above set_limit is desktop view
 var set_limit = 1020;
 
+//Variable hold wether themenu is open
+// if true then menu open 
+// if menu is false then menu closed
+var is_menu_open = false; 
+
 //View: mobile, browser to small
 //Summary: This function opens dropdown menu of tabs in header
 function show_menu()
@@ -30,6 +35,7 @@ function show_menu()
     document.getElementById("menuImage").style.display = "none";
     document.getElementById("menu_show_container").style.display = "block";
     document.getElementById("close_image").style.display = "block";
+    is_menu_open = true;
 }
 //View: mobile, browser to small
 //Summary: This function opens dropdown menu of tabs in header
@@ -43,6 +49,7 @@ function close_menu()
      document.getElementById("menu_show_container").style.display = "none";
     document.getElementById("close_image").style.display = "none";
     document.getElementById("menuImage").style.display = "block";
+    is_menu_open = false;
                             
    
 }
@@ -83,6 +90,8 @@ function checkScreen()
                         //  and the screen size is above the set limit variable
                         if(is_browser_to_small())
                         {
+
+                            
                             //Remove desktop tabs
                             //side note: in css i just did this with the class for 
                             // mobile view
@@ -91,8 +100,18 @@ function checkScreen()
                             document.getElementById("list_three").style.display = "none";
                             document.getElementById("list_four").style.display = "none";
 
-                            //Show mobile menu button
-                            document.getElementById("menuImage").style.display = "block";
+                            //checks to see if menu open is open if it is dnt
+                            //show menu icon
+                            if(is_menu_open)
+                            {
+                                //do not show menu image icon
+                            }
+                            else
+                            {
+                                 //Show mobile menu button
+                                document.getElementById("menuImage").style.display = "block";
+                            }
+                            
                             //resize nav container
                             document.getElementById("nav_container").style.paddingTop = "60px";
                             //resize image
@@ -184,7 +203,7 @@ window.addEventListener('resize',
     
                         //Closes menu when resized since if you dont close it then
                         //both buttons will show with menu open
-                        close_menu();
+                        //close_menu();
                         //when screen resizes calls this function to adjust website 
                         //to work with website dimensions
                         checkScreen();
